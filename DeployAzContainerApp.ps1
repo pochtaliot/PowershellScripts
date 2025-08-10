@@ -25,6 +25,7 @@ $containerAppEnv = $config.containerAppEnv
 $containerAppName = $config.containerAppName
 $containerImage = $config.containerImage
 $containerImageWithoutTag = $config.containerImageWithoutTag
+$DockerHubUsername = $config.DockerHubUsername
 
 # Optional: Enable logging to a file
 $logFile = ".\deploy-log.txt"
@@ -100,7 +101,6 @@ if (-not (az containerapp show --name $containerAppName --resource-group $resour
     Log "Creating Container App..."
 
     # Prompt user for Docker Hub credentials
-    $DockerHubUsername = Read-Host "Docker Hub Username"
     $DockerHubPassword = Read-Host "Docker Hub Password" -AsSecureString
     $DockerHubPasswordPlain = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
         [Runtime.InteropServices.Marshal]::SecureStringToBSTR($DockerHubPassword)

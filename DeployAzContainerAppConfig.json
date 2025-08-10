@@ -4,5 +4,6 @@
     "containerAppEnv" : "container-app-env-name",
     "containerAppName" : "container-app-name",
     "containerImage" : "container-app-image",
-    "containerImageWithoutTag" : "container-app-image-without-tag"
+    "containerImageWithoutTag" : "container-app-image-without-tag",
+    "DockerHubUsername" : "docker_hub_username"
 }
