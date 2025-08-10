@@ -1,0 +1,8 @@
+{
+    "location" : "resorce_location_name",
+    "resourceGroup" : "recource_group_name",
+    "containerAppEnv" : "container-app-env-name",
+    "containerAppName" : "container-app-name",
+    "containerImage" : "container-app-image",
+    "containerImageWithoutTag" : "container-app-image-without-tag"
+}
